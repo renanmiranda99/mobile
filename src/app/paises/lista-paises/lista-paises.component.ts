@@ -19,6 +19,7 @@ export class ListaPaisesComponent implements OnInit {
 
     this.countries$.subscribe({
       next: (data: any) => {
+        console.log(data)
         this.paises = data.sort((a: any, b: any) =>
           a.name.official.localeCompare(b.name.official)
         );

@@ -9,13 +9,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component'; // Ajuste o caminho conforme necessário
 import { HttpClientModule } from '@angular/common/http';
 import { ListaPaisesComponent } from './paises/lista-paises/lista-paises.component';
+import { ApiUsadaComponent } from './api-usada/api-usada.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent, // Adicione o HeaderComponent aqui
-    ListaPaisesComponent
+    ListaPaisesComponent,
+    ApiUsadaComponent
   ],
   imports: [
     BrowserModule,

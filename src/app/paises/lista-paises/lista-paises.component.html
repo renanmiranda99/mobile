@@ -1,6 +1,14 @@
+<ion-header collapse="fade">
+  <ion-toolbar>
+    <ion-buttons >
+      <ion-button routerLink="/paises">Países</ion-button>
+      <ion-button routerLink="/api">API</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 <ion-content [fullscreen]="true">
     <div class="cards-container">
-      <ion-card *ngFor="let pais of paises">
+      <ion-card *ngFor="let pais of paises" >
         <img [src]="pais.flags.svg" alt="Bandeira de {{ pais.name.official }}" width="100%" height="auto" />
         <ion-card-header>
           <ion-card-title>{{ pais.name.official }}</ion-card-title>
@@ -14,3 +22,9 @@
     </div>
   </ion-content>
   
+<!--
+https://ionicframework.com/docs/api/menu
+https://www.samjulien.com/how-to-use-route-parameters-in-angular
+https://www.digitalocean.com/community/tutorials/angular-query-parameters
+https://vidafullstack.com.br/angular/o-que-e-route-parameters-angular/  
+-->
